@@ -1,0 +1,50 @@
+.popular {
+    padding-top: 120px;
+
+    &__title {
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 100%;
+    }
+
+    &__list {
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+            padding-top: 30px;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: auto;
+            grid-template-rows: 150px auto;
+            height: 259px;
+            width: 200px;
+            background-color: $main-gray;
+
+            img {
+                transition: all .6s;
+            }
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__name {
+        width: 150px;
+        text-align: center;
+        margin-top: 6px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: $main-black;
+    }
+}

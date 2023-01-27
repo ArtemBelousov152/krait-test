@@ -1,0 +1,308 @@
+.day {
+    padding-top: 120px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 100%;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    &__name {
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 100%;
+        color: $main-black;
+        margin-top: 24px;
+    }
+
+    &__article {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #8F8F8F;
+    }
+
+    &__stars {
+        width: 109px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    &__product {
+        display: grid;
+        grid-template-columns: 550px 552px;
+        column-gap: 100px;
+    }
+
+    &__img {
+        position: relative;
+    }
+
+    &__new, &__hit, &__sale {
+        position: absolute;
+        top: 16px;
+    }
+
+    &__new {
+        left: 16px;
+    }
+
+    &__hit {
+        left: 70px;
+    }
+
+    &__sale {
+        left: 124px;
+    }
+
+    &__arrow {
+        cursor: pointer; 
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &_right {
+            right: 0;
+        }
+        &_left {
+            transform: translateY(-50%) rotateZ(180deg);
+        }
+    }
+
+    &__price {
+        width: 230px;
+        @include price;
+        align-items: center;
+        margin-right: 36px;
+
+        &_current {
+            margin-right: 16px;
+        }
+    }
+
+    &__priceWrapper {
+        display: flex;
+    }
+
+    &__watch {
+        width: 224px;
+        height: 64px;
+        background-color: #F5F5F5;
+        display: flex;
+        padding: 0 14px;
+        justify-content: space-between;
+        align-items: center;
+
+        &_hours,
+        &_minuts {
+            position: relative;
+
+            &::before {
+                content: ':';
+                position: absolute;
+                right: -14px;
+                font-size: 18px;
+            }
+        }
+
+        &_item {
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 52px;
+            height: 40px;
+            background: #FFFFFF;
+            border: 1px solid #D0D0D0;
+
+            span {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 110%;
+            }
+        }
+    }
+
+    &__divider {
+        height: 1px;
+        width: 100%;
+        background-color: #F0F0F0;
+        margin-top: 20px;
+    }
+
+    &__color {
+        margin-top: 30px;
+
+        &_title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: $main-black;
+        }
+
+        &_items {
+            margin-top: 16px;
+            display: flex;
+            width: 152px;
+            justify-content: space-between;
+        }
+
+        &_item {
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid #DADADA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .4s;
+
+            &:hover {
+                border-color: $main-black;
+            }
+        }
+
+        &_paint {
+            width: 24px;
+            height: 24px;
+            background-color: #D9D9D9;
+            border-radius: 50%;
+
+            &-green {
+                background-color: #A7E492;
+            }
+
+            &-yellow {
+                background-color: #F1CB7E;
+            }
+
+            &-orange {
+                background-color: #EA8C48;
+            }
+        }
+    }
+
+    &__size {
+        &_name {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: $main-black;
+        }
+
+        &_question {
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            background-color: #F0F0F0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .4s;
+
+            &:hover {
+                background-color: #D3D3D3;
+            }
+        }
+
+        &_title {
+            margin-right: 8px;
+        }
+
+        &_items {
+            margin-top: 14px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__footer {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 400px auto;
+        column-gap: 39px;
+    }
+
+    &__btn {
+        width: 100%;
+
+        &:nth-child(1) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all .4s;
+
+        &_icon {
+            margin-right: 8px;
+
+            svg {
+                transition: all .4s;
+                fill: #C9C9C9;
+
+                line {
+                    transition: all .4s;
+                    stroke: #C9C9C9;
+                }
+            }
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:hover svg {
+            fill: #979797;
+        }
+
+        &:hover line {
+            stroke: #979797;
+        }
+
+        &_text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 100%;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+    }
+}

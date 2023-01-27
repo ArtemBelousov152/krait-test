@@ -1,0 +1,78 @@
+.promo {
+    padding-top: 20px;
+
+    &__slider {
+        position: relative;
+        height: 560px;
+        width: 100%;
+        background-color: $main-gray;
+        overflow: hidden;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 52% auto;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 10;
+        padding-top: 176px;
+        padding-left: 126px;
+    }
+
+    &__descr {
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        color: $main-black;
+    }
+
+    &__title {
+        margin-top: 30px;
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        color: $main-black;
+    }
+
+    &__img {
+        height: 548px;
+        width: 548px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+    }
+
+    &__btn {
+        margin-top: 54px;
+    }
+
+    &__diamond {
+        position: absolute;
+        left: 0;
+        top: 24px;
+    }
+
+    &__navBtn {
+        position: absolute;
+    }
+
+    &__left {
+        left: 24px;
+        top: 50%;
+        transform: translateY(-50%) rotateZ(180deg);
+    }
+
+    &__right {
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

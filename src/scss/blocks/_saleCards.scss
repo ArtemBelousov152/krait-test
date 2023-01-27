@@ -1,0 +1,73 @@
+.saleCards {
+    padding-top: 120px;
+
+    &__item {
+        padding-right: 10px;
+        padding: 0 0 0 26px;
+        overflow: hidden;
+        position: relative;
+        height: 290px;
+        width: 420px;
+        background-color: $main-gray;
+        display: flex;
+        justify-content: center;
+        &_third {
+            .saleCards__img {
+                position: relative;
+                top: 33px;
+            }
+        }
+    }
+
+    &__img {
+        z-index: 10;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__diamond {
+        top: 20px;
+        left: -140px;
+        position: absolute;
+    }
+
+    &__descr {
+        margin-top: 72px;
+        position: relative;
+        z-index: 10;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 160%;
+        text-transform: uppercase;
+    }
+
+    &__persent {
+        width: 194px;
+        height: 58px;
+        position: absolute;
+        left: 0;
+        bottom: 45px;
+        font-size: 36px;
+        color: #fff;
+        background-color: #43807F;
+        padding-left: 26px;
+        display: flex;
+        align-items: center;
+        &_orange {
+            background-color: #E24B33;
+        }
+        &_yellow {
+            background-color: #E1A661;
+        }
+
+        span {
+            display: block;
+            font-weight: 600;
+            font-size: 24px;
+            margin-right: 13px;
+        }
+    }
+}

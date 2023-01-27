@@ -1,0 +1,98 @@
+.sale {
+    padding-top: 120px;
+
+    svg {
+        fill: #C9C9C9;
+        transition: all .4s;
+        &:hover {
+            fill: #979797;
+        }
+    }
+
+    &__title {
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 100%;
+        color: $main-black;
+    }
+
+    &__wrapper {
+        margin-top: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__slider {
+        overflow: hidden;
+        width: 100%;
+        margin-top: 36px;
+    }
+
+    &__item {
+        width: 310px;
+        height: 370px;
+    }
+
+    &__card {
+        position: relative;
+        padding: 0 24px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #F0F0F0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 200px auto;
+        justify-items: center;
+        row-gap: 60px;
+
+        .swiper-pagination {
+            bottom: -4px;
+        }
+    }
+
+    &__img {
+        position: relative;
+        overflow: hidden;
+        height: 180px;
+        width: 160px;
+        margin-top: 40px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__price {
+        @include price;
+    }
+
+    &__descr {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+    }
+
+    &__oval {
+        position: absolute;
+        left: 24px;
+        top: 16px;
+    }
+
+    &__heart {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+    }
+
+    &__eye {
+        position: absolute;
+        right: 20px;
+        top: 50px;
+    }
+}

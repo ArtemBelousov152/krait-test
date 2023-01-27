@@ -1,0 +1,25 @@
+.oval {
+    width: 50px;
+    height: 21px;
+    background-color: #E24B33;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__green {
+        background-color: #5B8A8F;
+    }
+
+    &__yellow {
+        background-color: #E1A661;
+    }
+
+    &__black {
+        background-color: #495159;
+    }
+}
