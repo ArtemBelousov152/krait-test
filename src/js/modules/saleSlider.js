@@ -8,6 +8,7 @@ const saleSlider = () => {
     const priceSlider = new Swiper('.sale__slider', {
         slidesPerView: '4',
         spaceBetween: 20,
+        effect: 'fade',
     })
 
     document.querySelector(".sale__arrow_left").addEventListener('click', () => {

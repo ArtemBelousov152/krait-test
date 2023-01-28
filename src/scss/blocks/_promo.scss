@@ -7,6 +7,7 @@
         width: 100%;
         background-color: $main-gray;
         overflow: hidden;
+        z-index: 50;
     }
 
     &__grid {
@@ -62,6 +63,7 @@
 
     &__navBtn {
         position: absolute;
+        z-index: 100;
     }
 
     &__left {

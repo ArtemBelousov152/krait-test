@@ -1,8 +1,19 @@
 @mixin headerHover {
     cursor: pointer;
     transition: all .5s;
+
     &:hover {
         opacity: 0.5;
+    }
+}
+
+@mixin headerSvgHover {
+    svg {
+        transition: all .5s;
+    }
+
+    &:hover svg {
+        opacity: 0.6;
     }
 }
 
@@ -12,25 +23,25 @@
 
 @mixin price {
     display: flex;
-        justify-content: space-between;
+    justify-content: space-between;
 
-        &_item {
-            display: flex;
-            align-items: center;
-        }
+    &_item {
+        display: flex;
+        align-items: center;
+    }
 
-        &_current {
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 100%;
-            margin-right: 8px;
-        }
+    &_current {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 100%;
+        margin-right: 8px;
+    }
 
-        &_past {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 100%;
-            color: #8F8F8F;
-            text-decoration-line: line-through;
-        }
+    &_past {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #8F8F8F;
+        text-decoration-line: line-through;
+    }
 }

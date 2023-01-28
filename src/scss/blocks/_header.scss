@@ -5,6 +5,7 @@
         grid-template-columns: 220px 141px auto 213px 116px;
         align-items: center;
         justify-items: left;
+        background-color: #fff;
     }
 
     &__city {
@@ -12,11 +13,24 @@
         align-items: center;
         font-weight: 400;
         font-size: 14px;
-        @include headerHover;
+        position: relative;
+        cursor: pointer;
+
+        @include headerSvgHover;
 
         &_name {
             margin: 0 8px;
         }
+    }
+
+    &__smallArrow {
+        &_active {
+            transform: rotateZ(180deg);
+        }
+    }
+
+    &__dropDown {
+        bottom: -90px;
     }
 
     &__phone {
@@ -25,7 +39,7 @@
         display: flex;
         align-items: center;
         color: $main-black;
-        @include headerHover;
+        @include headerSvgHover;
 
         a {
             margin-left: 10px;
@@ -86,19 +100,32 @@
     }
 
     &__icons {
-        svg {
-            @include headerHover;
-        }
-
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 32px;
+        width: 32px;
+        position: relative;
+        transition: all .3s;
+
+        &:hover {
+            background-color: #F8F8F8;
+        }
+
+        &:active {
+            background-color: #E8E7E7;
+        }
+    }
+
     &__heart {
         position: relative;
-        display: block;
 
         &:before {
             content: '23';
@@ -115,12 +142,14 @@
             justify-content: center;
             align-items: center;
             color: #fff;
-            right: -7px;
-            top: -3px;
+            right: 0px;
+            top: 2px;
         }
     }
 
     &__nav {
+        position: relative;
+        z-index: 50;
         background-color: $main-gray;
         height: 62px;
         display: grid;
