@@ -21,6 +21,11 @@
 
     &__img {
         z-index: 10;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
     }
 
     &__wrapper {

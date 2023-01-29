@@ -5,20 +5,20 @@ Swiper.use([Pagination])
 const saleSlider = () => {
 
     //Слайдер для блока распродаж
-    const priceSlider = new Swiper('.sale__slider', {
-        direction: "horizontal",
-        slidesPerView: '4',
-        spaceBetween: 20,
-        effect: 'fade',
-    })
+    // const priceSlider = new Swiper('.sale__slider', {
+    //     direction: "horizontal",
+    //     slidesPerView: '4',
+    //     spaceBetween: 20,
+    //     effect: 'fade',
+    // })
 
-    document.querySelector(".sale__arrow_left").addEventListener('click', () => {
-        priceSlider.slidePrev(600);
+    // document.querySelector(".sale__arrow_left").addEventListener('click', () => {
+    //     priceSlider.slidePrev(600);
 
-    })
-    document.querySelector(".sale__arrow_right").addEventListener('click', () => {
-        priceSlider.slideNext(600);
-    })
+    // })
+    // document.querySelector(".sale__arrow_right").addEventListener('click', () => {
+    //     priceSlider.slideNext(600);
+    // })
 
     //Слайдер для картинок в карточках
     const imgSlider = new Swiper('.sale__img', {

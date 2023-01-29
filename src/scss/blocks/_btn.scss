@@ -38,6 +38,8 @@
         z-index: 10;
 
         svg {
+            position: relative;
+            bottom: 1px;
             transition: all .2s;
             fill: $main-black;
         }
@@ -48,7 +50,6 @@
 
         &:hover {
             background-color: #F5F5F5;
-            ;
         }
 
         &:active svg {
@@ -74,6 +75,10 @@
         &_active {
             background-color: $main-black;
             color: #fff;
+
+            &:hover {
+                background-color: $main-black;
+            }
         }
     }
 
@@ -99,5 +104,15 @@
             background-color: $main-black;
             color: #fff;
         }
+    }
+
+    &__nav {
+        width: 100px;
+        width: 120px;
+        height: 30px;
+        justify-self: center;
+        border-radius: 15px;
+        font-size: 12px;
+        text-transform: none;
     }
 }
