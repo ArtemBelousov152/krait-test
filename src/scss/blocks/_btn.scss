@@ -44,11 +44,6 @@
 
         &_left {
             transform: rotateZ(180deg);
-
-            svg {
-                position: relative;
-                bottom: 2px;
-            }
         }
 
         &:hover {

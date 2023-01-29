@@ -3,6 +3,7 @@
 @import './base/mixins';
 @import './blocks/btn';
 @import './blocks/oval';
+@import './blocks/dropDown';
 
 * {
     box-sizing: border-box;
@@ -59,4 +60,4 @@ p {
 @import'./blocks/day';
 @import './base/assets';
 @import './blocks/paper';
-@import './blocks/dropDown';
+@import './blocks/media';

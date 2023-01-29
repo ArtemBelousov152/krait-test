@@ -30,9 +30,20 @@
         margin-top: 36px;
     }
 
+    &__sliderWrapper {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
     &__item {
         width: 310px;
         min-height: 370px;
+        margin-right: 20px;
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
     }
 
     &__card {
@@ -47,6 +58,7 @@
         justify-items: center;
         row-gap: 60px;
         transition: all .5s;
+        z-index: 10;
 
         svg {
             fill: #c9c9c9;
@@ -87,10 +99,12 @@
     }
 
     &__settings {
+        position: relative;
         margin-top: 24px;
     }
 
     &__setting {
+        cursor: pointer;
         padding: 0 16px;
         width: 100%;
         height: 40px;
@@ -102,9 +116,17 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 160%;
+        position: relative;
+        z-index: 10;
 
         &:nth-last-child(1) {
             margin-bottom: 0;
+        }
+
+        &_dropDown {
+            top: 0;
+            width: 100%;
+            height: 132px;
         }
     }
 

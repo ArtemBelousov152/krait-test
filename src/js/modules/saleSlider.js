@@ -6,6 +6,7 @@ const saleSlider = () => {
 
     //Слайдер для блока распродаж
     const priceSlider = new Swiper('.sale__slider', {
+        direction: "horizontal",
         slidesPerView: '4',
         spaceBetween: 20,
         effect: 'fade',

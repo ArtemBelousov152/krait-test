@@ -6,7 +6,7 @@ import ringCards from "./modules/ringCards";
 window.addEventListener('DOMContentLoaded', () => {
 
     sliderPromo();
-    saleSlider();
+    // saleSlider();
     citiesMenu();
     ringCards();
 })
