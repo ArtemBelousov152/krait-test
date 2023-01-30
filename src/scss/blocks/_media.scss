@@ -241,9 +241,10 @@
         }
 
         &__oval {
-            &:hover {
-                background-color: #F0F0F0;
-                color: $main-black;
+
+            &_active {
+                background-color: $main-black;
+                color: #fff;
             }
         }
 
@@ -429,11 +430,11 @@
             &:hover {
                 opacity: 1;
             }
-    
+
             &:hover svg {
                 fill: #C9C9C9;
             }
-    
+
             &:hover line {
                 stroke: #C9C9C9;
             }
@@ -674,6 +675,7 @@
 
     .paper {
         padding-top: 50px;
+
         &__item {
             margin: 0;
         }
@@ -748,7 +750,7 @@
     .promo {
         &__title {
             font-size: 15px;
-        }   
+        }
 
         &__grid {
             grid-template-columns: 56% auto;
@@ -760,6 +762,7 @@
 
         &__diamond {
             top: -185px;
+
             svg {
                 width: 198px;
             }
@@ -816,6 +819,7 @@
 
         &__diamond {
             top: -42px;
+
             svg {
                 width: 320px;
             }
@@ -827,6 +831,7 @@
             font-size: 15px;
             padding-left: 6px;
             bottom: 24px;
+
             span {
                 font-size: 15px;
                 margin-right: 6px;

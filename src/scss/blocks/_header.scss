@@ -190,6 +190,7 @@
         padding-top: 60px;
         transition: all .6s;
         transform: translateX(100%);
+        z-index: 501;
 
         &_active {
             transform: translateX(0);
@@ -203,7 +204,23 @@
         top: 0;
         background-color: #fff;
         transition: all .5s;
-        transform: translateX(-100%);
+        transform: translateX(-101%);
+
+        &_gray {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 100vw; 
+            z-index: 500;
+            transform: translateY(-101%);
+            transition: all .5s;
+            background-color: $main-black;
+            opacity: .5;
+            &-active {
+                transform: translateY(0);
+            }
+        }
 
         &_active {
             transform: translateX(0);
