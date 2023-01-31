@@ -8,6 +8,7 @@ const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
+const webp = require('gulp-webp');
 const webpackConfig = require('./webpack.config.js');
 
 gulp.task('server', function () {
@@ -57,7 +58,8 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('images', function () {
-    return gulp.src("src/img/**/*.*")
+    return gulp.src("src/img/**/*.+(png|jpg)")
+        .pipe(webp())
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img/'))
         .pipe(browserSync.stream());
